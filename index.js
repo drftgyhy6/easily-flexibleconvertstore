@@ -1,7 +1,2 @@
-function singleNumber(nums) {
-  let result = 0;
-  for (const num of nums) {
-    result ^= num;
-  }
-  return result;
-}
+const initializeArrayWithRange = (end, start = 0) =>
+  Array.from({ length: end - start }, (_, i) => i + start);
