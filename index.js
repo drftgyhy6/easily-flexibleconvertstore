@@ -1,2 +1,3 @@
-const initializeArrayWithRange = (end, start = 0) =>
-  Array.from({ length: end - start }, (_, i) => i + start);
+function isPalindrome(str) {
+  return str === str.split("").reverse().join("");
+}
