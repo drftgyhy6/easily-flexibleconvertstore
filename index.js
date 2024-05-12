@@ -1,3 +1,3 @@
-function isPalindrome(str) {
-  return str === str.split("").reverse().join("");
+function sumArray(arr) {
+  return arr.reduce((acc, curr) => acc + curr, 0);
 }
