@@ -1,10 +1,11 @@
-function removeDuplicates(nums) {
-  let index = 0;
-  for (let i = 1; i < nums.length; i++) {
-    if (nums[i] !== nums[index]) {
-      index++;
-      nums[index] = nums[i];
-    }
+function findMaxConsecutiveOnes(nums) {
+  let maxCount = 0;
+  let count = 0;
+  for (const num of nums) {
+    if (num === 1) {
+      count++;
+      maxCount = Math.max(maxCount, count);
+    } else count = 0;
   }
-  return index + 1;
+  return maxCount;
 }
